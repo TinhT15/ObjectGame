@@ -19,25 +19,20 @@ public class TargetPracticeObject
         System.out.println("Here is the target board.");
         for (int x = 0; x < myArraySize; x++) {
                 for (int y = 0; y < myArraySize; y++) { 
-                    if (y == 0)
-                    {
-                        System.out.print("*");
-                    }
                     
                     int myInt = myArray[x][y];
                     
                     if (myInt == 9){
                         System.out.print("\uD83C\uDFAF");
                     }
+                    else if (myInt == 1){
+                        System.out.print("X");
+                    }
                     else 
                     {
-                        System.out.print(myInt);
+                        System.out.print("\uD83C\uDF88");
                     }
-                    
-                    if (y == myArraySize -1)
-                    {
-                        System.out.print("*");
-                    }
+                
                 }
                 System.out.println("");
                 
